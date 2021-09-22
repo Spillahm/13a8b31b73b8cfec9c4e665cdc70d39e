@@ -12,7 +12,6 @@ def main():
     5. Quit
     """
 
-
     while True:
         print(menu_text)
         choice = input('Enter your choice: ')

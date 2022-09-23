@@ -6,10 +6,11 @@ A menu - you need to add the database and fill in the functions.
 def main():
     menu_text = """
     1. Display all records
-    2. Add new record
-    3. Edit existing record
-    4. Delete record 
-    5. Quit
+    2. Search by name
+    3. Add new record
+    4. Edit existing record
+    5. Delete record 
+    6. Quit
     """
 
     while True:
@@ -18,12 +19,14 @@ def main():
         if choice == '1':
             display_all_records()
         elif choice == '2':
-            add_new_record()
+            search_by_name()
         elif choice == '3':
-            edit_existing_record()
+            add_new_record()
         elif choice == '4':
-            delete_record()
+            edit_existing_record()
         elif choice == '5':
+            delete_record()
+        elif choice == '6':
             break
         else:
             print('Not a valid selection, please try again')
@@ -31,6 +34,10 @@ def main():
 
 def display_all_records():
     print('todo display all records')
+
+
+def search_by_name():
+    print('todo ask user for a name, and print the matching record if found. What should the program do if the name is not found?')
 
 
 def add_new_record():
